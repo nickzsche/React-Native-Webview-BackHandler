@@ -49,10 +49,10 @@ const App = () => {
         />
         <View style={styles.tabBarContainer}>
           <TouchableOpacity onPress={backButtonHandler}>
-            <Text style={styles.button}>Back</Text>
+            <Text style={styles.button}>Geri</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={frontButtonHandler}>
-            <Text style={styles.button}>Forward</Text>
+            <Text style={styles.button}>İleri</Text>
           </TouchableOpacity>
         </View>
       </SafeAreaView>
@@ -68,11 +68,11 @@ const styles = StyleSheet.create({
     padding: 20,
     flexDirection: 'row',
     justifyContent: 'space-around',
-    backgroundColor: '#b43757'
+    backgroundColor: 'black'
   },
   button: {
     color: 'white',
-    fontSize: 24
+    fontSize: 16,
   }
 })
 
