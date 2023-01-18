@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import registerNNPushToken from 'native-notify';
 import {
   SafeAreaView,
   StyleSheet,
@@ -11,6 +12,7 @@ import {
 import WebView from 'react-native-webview'
 
 const App = () => {
+  registerNNPushToken(5841, 'FhMc26ZY2dUx6l8Jjdr6BB');
   const [canGoBack, setCanGoBack] = useState(false)
   const [canGoForward, setCanGoForward] = useState(false)
   const [currentUrl, setCurrentUrl] = useState('')
@@ -29,7 +31,7 @@ const App = () => {
       <StatusBar barStyle='dark-content' />
       <SafeAreaView style={styles.flexContainer}>
         <WebView
-          source={{ uri: 'https://bursabuluyor.com/' }}
+          source={{ uri: 'https://www.yeryuzubayi.com/' }}
           startInLoadingState={true}
           renderLoading={() => (
             <ActivityIndicator
