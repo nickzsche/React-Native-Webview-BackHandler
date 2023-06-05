@@ -12,7 +12,6 @@ import {
 import WebView from 'react-native-webview'
 
 const App = () => {
-  registerNNPushToken(5841, 'FhMc26ZY2dUx6l8Jjdr6BB');
   const [canGoBack, setCanGoBack] = useState(false)
   const [canGoForward, setCanGoForward] = useState(false)
   const [currentUrl, setCurrentUrl] = useState('')
@@ -31,7 +30,7 @@ const App = () => {
       <StatusBar barStyle='dark-content' />
       <SafeAreaView style={styles.flexContainer}>
         <WebView
-          source={{ uri: 'https://www.yeryuzubayi.com/' }}
+          source={{ uri: 'https://www.hastasozluk.com/' }}
           startInLoadingState={true}
           renderLoading={() => (
             <ActivityIndicator
@@ -68,7 +67,8 @@ const styles = StyleSheet.create({
     padding: 20,
     flexDirection: 'row',
     justifyContent: 'space-around',
-    backgroundColor: 'black'
+    backgroundColor: '#00BF6F',
+    
   },
   button: {
     color: 'white',
